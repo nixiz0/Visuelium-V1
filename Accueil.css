@@ -1,0 +1,517 @@
+/* Ici placer votre @import avec une police si vous souhaitez rajouter vos polices d'écriture (aller sur GoogleFont par exemple)*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+html, body {
+    margin: 0;
+    /* Veuillez placer votre police d'écriture que vous souhaitez */
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    font-size:43px;
+}
+
+#menu_fixe {
+    position: fixed;
+    width: 100%;
+}
+
+.menu {
+    margin-left: 1%;
+    display:flex;
+    justify-content:flex-start;
+}
+
+.header {
+    display:flex;
+    justify-content:center;
+    margin-bottom: 5%;
+}
+
+.logo_menu {
+    margin-top:7%;
+    transition: all 1s ease;
+}
+
+.logo_menu:hover {
+    width:500px;
+    height:500px;
+    transition: all 1s ease;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-top: 5%;
+    margin-right: 10%;
+    font-weight:900;
+}
+
+.navigation {
+    display:flex;
+    justify-content:flex-start;
+    font-size: 20px;
+}
+
+.dark1 {
+    width:100%;
+    background-color: black;
+    display:flex;
+    animation-name: move;
+    animation-duration: 500ms;
+}
+
+.img_logiciel_montage1 {
+    margin-left: 2%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width:1000px;
+    height:690px;
+    border-radius:1%;
+}
+
+.txt_montage {
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 12%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.white1 {
+    background-color: white;
+    display:flex;
+    animation-name: move;
+    animation-duration: 800ms;
+}
+
+.txt_photoshop {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 11%;
+}
+
+.img_logiciel_photoshop {
+    margin-top: 10%;
+    margin-bottom: 6%;
+    margin-right: 2%;
+    width:1000px;
+    height:600px;
+    border-radius:1%;
+}
+
+.mobile_first_img_logiciel_photoshop {
+    display:none;
+}
+
+.white2 {
+    background-color: white;
+    display:flex;
+    animation-name: move;
+    animation-duration: 800ms;
+}
+
+.img_logiciel_photoshop2 {
+    margin-top: 2%;
+    margin-bottom: 10%;
+    margin-left: 2%;
+    width:1000px;
+    height:600px;
+    border-radius:1%;
+}
+
+.txt_photoshop2 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.foot {
+    width: 100%;
+    background-color: black;
+    color:white;
+    padding-bottom: 1.5%
+}
+
+.photo_foot {
+    display: flex;
+    justify-content: center;
+}
+
+.txt_foot {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+@media (max-width:530px) {
+    h1 {
+        display: block;
+        text-align: center;
+        font-size:29px;
+    }
+    #menu_fixe {
+        display: block;
+        font-size: 20px;
+    }
+    .menu {
+        display: block;
+    }
+    .navigation {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+    }
+    .contact {
+        position: fixed;
+        top: 7%;
+        width: 100%;
+        text-align: center; 
+    }
+    .titre_contact {
+        display: none;
+    }
+    .txt_contact {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 1%;
+    }
+    .logo_menu {
+        margin-top: 50%;
+        width:300px;
+        height:300px;
+    }
+    .logo_menu:hover {
+        width:400px;
+        height:400px;
+        transition: all 1s ease;
+    }
+    .dark1 {
+        display:block;
+        padding-bottom: 2%;
+    }
+    .img_logiciel_montage1 {
+        display: none;
+    }
+    .img_logiciel_montage1_for_mobil {
+        width: auto;
+        height:300px;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 3%;
+    }
+    .txt_montage {
+        font-size: 22px;
+    }
+    .white1 {
+        display:block;
+    }
+    .img_logiciel_photoshop {
+        display:none;
+        border-radius: 0%;
+    }
+    .mobile_first_img_logiciel_photoshop {
+        margin-top: 30%;
+        display: block;
+        width: auto;
+        height:340px;
+    }
+    .txt_photoshop {
+        font-size: 22px;
+    }
+    .white2 {
+        display:block;
+        margin-bottom: 10%;
+        padding-bottom: 2%;
+        padding-top: 1%;
+    }
+    .img_logiciel_photoshop2 {
+        display: none;
+    }
+    .img_logiciel_photoshop2_for_mobil {
+        display: block;
+        width: auto;
+        height:300px;
+        margin-left: 0%;
+        margin-right: 0%;
+        border-radius: 0%;
+    }
+    .txt_photoshop2 {
+        font-size: 22px;
+    }
+    .foot {
+        margin-top: 10%;
+    }
+    .foot_logo {
+        width: auto;
+        height: 150px;
+    }
+    .txt_foot {
+        font-size: 22px;
+    }
+}
+
+@media (min-width:531px) {
+    h1 {
+        display: block;
+        text-align: center;
+        font-size:38px;
+    }
+    #menu_fixe {
+        display: block;
+    }
+    .menu {
+        display: block;
+    }
+    .navigation {
+        display: flex;
+        justify-content: center;
+        font-size: 28px;
+    }
+    .contact {
+        position: fixed;
+        top: 10%;
+        width: 100%;
+        text-align: center; 
+    }
+    .titre_contact {
+        display: none;
+    }
+    .txt_contact {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 1%;
+    }
+    .logo_menu {
+        margin-top: 40%;
+        width:450px;
+        height:450px;
+    }
+    .dark1 {
+        display:block;
+        padding-bottom: 2%;
+    }
+    .img_logiciel_montage1 {
+        display: none;
+    }
+    .img_logiciel_montage1_for_mobil {
+        width: auto;
+        height:579px;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 3%;
+        border-radius: 0%;
+    }
+    .txt_montage {
+        font-size: 28px;
+    }
+    .white1 {
+        display:block;
+    }
+    .img_logiciel_photoshop {
+        display:none;
+    }
+    .mobile_first_img_logiciel_photoshop {
+        margin-top: 30%;
+        display: block;
+        width: auto;
+        height:580px;
+    }
+    .txt_photoshop {
+        font-size: 28px;
+    }
+    .white2 {
+        display:block;
+        margin-bottom: 10%;
+        padding-bottom: 2%;
+        padding-top: 1%;
+    }
+    .img_logiciel_photoshop2 {
+        display: none;
+
+    }
+    .img_logiciel_photoshop2_for_mobil {
+        display: block;
+        width: auto;
+        height:600px;
+        margin-left: 0%;
+        margin-right: 0%;
+        border-radius: 0%;
+    }
+    .txt_photoshop2 {
+        font-size: 28px;
+    }
+    .foot {
+        margin-top: 10%;
+    }
+    .foot_logo {
+        width: auto;
+        height: 220px;
+    }
+    .txt_foot {
+        font-size: 28px;
+    }
+}
+
+@media (min-width:1030px) {
+    h1 {
+        display: block;
+        text-align: center;
+        font-size:43px;
+    }
+    #menu_fixe {
+        position: fixed;
+        width: 100%;
+    }
+    .menu {
+        margin-left: 1%;
+        display:flex;
+        justify-content:flex-start;
+    }
+    .navigation {
+        display:flex;
+        justify-content:flex-start;
+        font-size: 24px;
+        margin-top: 8%;
+    }
+    .contact {
+        position: fixed;
+        top:2%;
+        right: 5%;
+        width: 28%;
+        text-align: center; 
+    }
+    .titre_contact {
+        display: block;
+        font-size: 25px;
+        margin-bottom: 3%;
+        font-weight: bold;
+    }
+    .txt_contact {
+        font-size: 23px;
+        font-weight: bold;
+    }
+    .logo_menu {
+        margin-top:7%;
+        transition: all 1s ease;
+    }
+    .dark1 {
+        width:100%;
+        background-color: black;
+        display:flex;
+        animation-name: move;
+        animation-duration: 500ms;
+    }
+    .img_logiciel_montage1 {
+        display: block;
+        margin-left: 2%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width:auto;
+        height:550px;
+        border-radius:1%;
+    }
+    .img_logiciel_montage1_for_mobil {
+        display: none;
+    }
+    .txt_montage {
+        color:white;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 12%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .white1 {
+        background-color: white;
+        display:flex;
+        animation-name: move;
+        animation-duration: 800ms;
+    }
+    .img_logiciel_photoshop {
+        display:flex;
+        margin-top: 10%;
+        margin-bottom: 6%;
+        margin-right: 2%;
+        width:1000px;
+        height:600px;
+        border-radius:1%;
+    }
+    .mobile_first_img_logiciel_photoshop {
+        display:none;
+    }
+    .txt_photoshop {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 11%;
+    }
+    .white2 {
+        background-color: white;
+        display:flex;
+        animation-name: move;
+        animation-duration: 800ms;
+    }
+    .img_logiciel_photoshop2 {
+        display: block;
+        margin-top: 2%;
+        margin-bottom: 10%;
+        margin-left: 2%;
+        width:1000px;
+        height:600px;
+        border-radius:1%;
+    }
+    .img_logiciel_photoshop2_for_mobil {
+        display: none;
+    }
+    .txt_photoshop2 {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 4%;
+    }
+    .foot {
+        width: 100%;
+        background-color: black;
+        color:white;
+        padding-bottom: 1.5%
+    }    
+    .photo_foot {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 350px;
+    }    
+    .foot_logo {
+        width: auto;
+        height: 300px;
+    }
+    .txt_foot {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+}
+
+
+@keyframes move {
+    from { transform: translateY(500px);
+
+    }
+    to { transform: translateY(0);
+
+    }
+}
+
+@keyframes feature {
+    from { transform: translateX(400px);
+
+    }
+    to { transform: translateX(0);
+
+    }
+}

@@ -1,0 +1,481 @@
+/* Ici placer votre @import avec une police si vous souhaitez rajouter vos polices d'écriture (aller sur GoogleFont par exemple)*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+html, body {
+    margin: 0;
+    /* Veuillez placer votre police d'écriture que vous souhaitez */
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    font-size:43px;
+}
+
+#menu_fixe {
+    position: fixed;
+    width: 100%;
+}
+
+.menu {
+    margin-left: 1%;
+    display:flex;
+    justify-content:flex-start;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-top: 5%;
+    margin-right: 10%;
+    font-weight:900;
+}
+
+.navigation {
+    display:flex;
+    justify-content:flex-start;
+    font-size: 24px;
+    margin-top: 8%;
+}
+
+.foot {
+    width: 100%;
+    background-color: black;
+    color:white;
+    padding-bottom: 1.5%
+}
+
+.photo_foot {
+    display: flex;
+    justify-content: center;
+}
+
+.txt_foot {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+@media (max-width:530px) {
+    h1 {
+        display: block;
+        text-align: center;
+        font-size:30px;
+    }
+    #menu_fixe {
+        display: block;
+    }
+    .menu {
+        display: block;
+    }
+    .navigation {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        margin-top: 3%;
+    }
+    .contact {
+        position: fixed;
+        top:7.8%;
+        width: 100%;
+        text-align: center; 
+    }
+    .titre_contact {
+        display: none;
+    }
+    .txt_contact {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 1%;
+    }
+    h2 {
+        margin-top: 50%;
+        font-size: 30px;
+        border-bottom: solid 2px black;
+    }
+    .block_titre {
+        display:flex;
+        justify-content:center;
+    }
+    .flex_photo_intro {
+        display: flex;
+        justify-content: center;
+        margin-right: 3%;
+    }
+    .animation_right {
+        animation-name: move_left;
+        animation-duration: 700ms;
+    }
+    .animation_left {
+        animation-name: move_right;
+        animation-duration: 700ms;
+    }
+    .photo_intro {
+        animation-name: move_mobil;
+        animation-duration: 500ms;
+        width: auto;
+        height: 450px;
+    }
+    .video1 {
+        padding: 2%;
+        margin-bottom: 10%;
+        background-color:black;
+        color:white;
+    }
+    .flex_video {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 300px;
+    }
+    .txt_video {
+        text-align: center;
+        margin-top: 4%;
+        font-size: 18px;
+        margin-top: 10%;
+    }
+    .video2 {
+        padding: 2%;
+        margin-bottom: 10%;
+    }
+    .ytb_video2 {
+        box-shadow: 0.1px 0.1px 8px black;
+        border-radius:3%;
+    }
+    .minia {
+        background-color:black;
+        padding: 2%;
+        color:white;
+        padding-bottom: 10%;
+    }
+    .taille_minia {
+        width:auto;
+        height: 250px;
+    }
+    .txt_minia {
+        text-align: center;
+        margin-top: 2%;
+        font-size: 18px;
+    }
+    .foot {
+        width: 100%;
+        background-color: black;
+        color:white;
+        padding-bottom: 1.5%
+    }    
+    .photo_foot {
+        display: flex;
+        justify-content: center;
+    }    
+    .foot_logo {
+        width: auto;
+        height: 150px;
+    }
+    .txt_foot {
+        display: flex;
+        justify-content: center;
+        font-size: 22px;
+    }
+    
+}
+
+@media (min-width:531px) {
+    h1 {
+        display: block;
+        text-align: center;
+        font-size:35px;
+
+    }
+    #menu_fixe {
+        display: block;
+    }
+    .menu {
+        display: block;
+    }
+    .navigation {
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        margin-top: 3%;
+    }
+    .contact {
+        position: fixed;
+        top: 8%;
+        width: 100%;
+        text-align: center; 
+    }
+    .titre_contact {
+        display: none;
+    }
+    .txt_contact {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 1%;
+    }
+    h2 {
+        margin-top: 30%;
+        font-size: 36px;
+        border-bottom: solid 2px black;
+    }
+    .block_titre {
+        display:flex;
+        justify-content:center;
+    }
+    .flex_photo_intro {
+        display: flex;
+        justify-content: center;
+        margin-right: 3%;
+    }
+    .animation_right {
+        animation-name: move_left;
+        animation-duration: 700ms;
+    }
+    .animation_left {
+        animation-name: move_right;
+        animation-duration: 700ms;
+    }
+    .photo_intro {
+        width: 250px;
+        height: 250px;
+    }
+    .video1 {
+        padding: 2%;
+        margin-bottom: 2%;
+        background-color:black;
+        color:white;
+    }
+    .flex_video {
+        display: flex;
+        justify-content: center;
+    }
+    .txt_video {
+        text-align: center;
+        margin-top: 2%;
+        font-size: 22px;
+    }
+    .video2 {
+        padding: 2%;
+        margin-bottom: 2%;
+    }
+    .ytb_video2 {
+        box-shadow: 0.1px 0.1px 8px black;
+        border-radius:3%;
+    }
+    .minia {
+        background-color:black;
+        padding: 2%;
+        color:white;
+        padding-bottom: 10%;
+    }
+    .taille_minia {
+        width:auto;
+        height: 200px;
+    }
+    .txt_minia {
+        text-align: center;
+        margin-top: 2%;
+        font-size: 22px;
+    }
+    .foot {
+        width: 100%;
+        background-color: black;
+        color:white;
+        padding-bottom: 1.5%
+    }    
+    .photo_foot {
+        display: flex;
+        justify-content: center;
+    }    
+    .foot_logo {
+        width: auto;
+        height: 220px;
+    }
+    .txt_foot {
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+    }
+}
+
+@media (min-width:1030px) {
+    h1 {
+        display: block;
+        text-align: center;
+        font-size:43px;
+    }
+    
+    #menu_fixe {
+        position: fixed;
+        width: 100%;
+    }
+    
+    .menu {
+        margin-left: 1%;
+        display:flex;
+        justify-content:flex-start;
+    }
+    
+    .navigation {
+        display:flex;
+        justify-content:flex-start;
+        font-size: 24px;
+        margin-top: 8%;
+    }
+    .contact {
+        position: fixed;
+        top:2%;
+        right: 5%;
+        width: 28%;
+        text-align: center; 
+    }
+    .titre_contact {
+        display: block;
+        font-size: 25px;
+        margin-bottom: 3%;
+        font-weight: bold;
+    }
+    .txt_contact {
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    h2 {
+        margin-top: 10%;
+        font-size: 36px;
+        border-bottom: solid 2px black;
+
+    }
+    .block_titre {
+        display:flex;
+        justify-content:center;
+    }
+
+    .flex_photo_intro {
+        display: flex;
+        justify-content: center;
+    }
+
+    .animation_right {
+        animation-name: move_right;
+        animation-duration: 900ms;
+    }
+
+    .animation_left {
+        animation-name: move_left;
+        animation-duration: 900ms;
+    }
+
+    .photo_intro {
+        margin-right: 2%;
+        width: auto;
+        height: 500px;
+    }
+
+    .video1 {
+        padding: 2%;
+        margin-bottom: 2%;
+        background-color:black;
+        color:white;
+    }
+
+    .flex_video {
+        display: flex;
+        justify-content: center;
+    }
+
+    .txt_video {
+        text-align: center;
+        margin-top: 2%;
+        font-size: 23px;
+    }
+
+    .video2 {
+        padding: 2%;
+        margin-bottom: 2%;
+    }
+
+    .ytb_video2 {
+        box-shadow: 0.1px 0.1px 8px black;
+        border-radius:3%;
+    }
+
+    .minia {
+        background-color:black;
+        padding: 2%;
+        color:white;
+        padding-bottom: 10%;
+    }
+    .taille_minia {
+        width:auto;
+        height: 350px;
+    }
+    .txt_minia {
+        text-align: center;
+        margin-top: 2%;
+        font-size: 23px;
+    }
+
+    .foot {
+        width: 100%;
+        background-color: black;
+        color:white;
+        padding-bottom: 1.5%
+    }
+
+    .foot_logo {
+        width: auto;
+        height: 300px;
+    }
+    
+    .photo_foot {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 350px;
+    }
+    
+    .txt_foot {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+}
+
+
+
+@keyframes move {
+    from { transform: translateY(400px);
+
+    }
+    to { transform: translateY(0);
+
+    }
+}
+
+@keyframes move_right {
+    from { transform: translateX(430px)
+    }
+    to { transform: translateX(0);
+
+    }
+}
+
+@keyframes move_left {
+    from { transform: translateX(-430px)
+    }
+    to { transform: translateX(0);
+        
+    }
+}
+
+@keyframes move_mobil {
+    from { transform: translateY(430px)
+    }
+    to { transform: translateY(0);
+        
+    }
+}
